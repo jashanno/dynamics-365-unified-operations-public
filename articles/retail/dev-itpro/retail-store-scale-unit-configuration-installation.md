@@ -109,6 +109,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > If media is commonly used, it will be necessary to generate a **Media Server Base URL** for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile can be reused. 
+
     >
     > For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.  
 
@@ -123,6 +124,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > After the first Retail Store Scale Unit is created, it requires less data generation to perform a full data sync from the Channel database instead of the Channel data group.
+    
+    > [!IMPORTANT]
+    > For on-premises deployments, there is no **Default** channel data group.  Either create a new data group or perform a full data sync from the **Channel database** page instead for the specific Retail Store Scale Unit entry created previously.
 
 ### Download the Retail Store Scale Unit installer
 
