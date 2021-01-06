@@ -106,13 +106,15 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 > [!NOTE]
 > Before you run the Retail Modern POS installer, make sure that the following requirements are met:
+> - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall out due to the antivirus solution checking active files while in use.
 > - The installer requires that the Microsoft .NET Framework version 4.5.1 or above be installed on the system.
 > - The installer installs Retail Modern POS only on the following operating systems:
->     - Windows 10 Pro, Enterprise, or Enterprise Long Term Servicing Branch (LTSB) edition with Anniversary Update (both x86 and x64 architectures).
+>     - Windows 10 Pro, Enterprise, or Enterprise Long Term Servicing Branch (LTSB or LTSC) edition with the latest available updates.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
 >     - **Value:** 1
+> - If offline is to be used (an offline database created), then a default SQL server instance must exist.  If SQL instances exist, but none are set as "Default", then the installer will fail to install the offline database.
 
 The Retail Modern POS installer first extracts the associated files and then starts the installation.
 
